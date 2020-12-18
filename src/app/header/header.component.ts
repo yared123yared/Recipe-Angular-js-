@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
   @Output() featureSelected = new EventEmitter<string>();
 
   onSelect(features: string) {
+    // console.log(features);
     this.featureSelected.emit(features);
   }
 
