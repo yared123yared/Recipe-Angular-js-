@@ -9,14 +9,17 @@
                 <div class="col-sm-2 form-group">
                     <label for="amount">Amount</label>
                     <input type="number" class="form-control" id="amount" name="amount" ngModel required
-                        pattern="^[1-9]+[0-9]+$">
+                        pattern="^[0-9]+[0-9]+$">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <button class="btn btn-success" type="submit" [disabled]="!f.valid">Add</button>
-                    <button class="btn btn-danger" type="button">Delete</button>
-                    <button class="btn btn-primary" type="button">Clear</button>
+                    <button class=" btn btn-success" type="submit" [disabled]="!f.valid">{{editMode ? "Update"
+                        :
+                        "Add"
+                        }}</button>
+                    <button style="margin-left: 4px;" class="btn btn-danger ml-1" type="button">Delete</button>
+                    <button style="margin-left: 4px;" class="btn btn-primary ml-1" type="button">Clear</button>
                 </div>
             </div>
         </form>

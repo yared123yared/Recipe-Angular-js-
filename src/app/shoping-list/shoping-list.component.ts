@@ -21,5 +21,8 @@ export class ShopingListComponent implements OnInit {
     console.log(ingredient);
     // this.ingredients.push(ingredient);
   }
+  onEditItem(index: number) {
+    this.slcService.StartedEditing.next(index);
+  }
 
 }
