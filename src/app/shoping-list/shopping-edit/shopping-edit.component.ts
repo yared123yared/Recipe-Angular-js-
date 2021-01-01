@@ -44,6 +44,9 @@ export class ShoppingEditComponent implements OnInit {
     form.reset();
     // this.ingredientAdded.emit(newIngredient);
   }
+  onClear() {
+    this.slForm.reset();
+  }
 
 
 }
